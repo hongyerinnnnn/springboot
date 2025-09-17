@@ -8,7 +8,13 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class HomeController {
-    @GetMapping("/")
+    @GetMapping("/index")
 
-    public String index() { return "index"; } // /WEB-INF/views/index.jsp
+    public String index() {
+        return "index"; } // /WEB-INF/views/index.jsp
+
+    @GetMapping("/restbase")
+    public String restbaseView(){
+        return "restbase";
+    }
 }
